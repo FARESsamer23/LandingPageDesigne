@@ -11,7 +11,7 @@ import Services from "./components/Services"
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App" basename={'/LandingPageDesigne'}>
     <Navbar/>
    <Home/>
    <Services/>
