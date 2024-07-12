@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Blog() {
     const blogs = [
-        {id:1,title:"Creating Streamlined Safeguarding Processes with OneRen",image:"/src/assets/B1.jpg"},
-        {id:2,title:"What are your safeguarding responsibilities and how can you manage them?",image:"/src/assets/B2.jpg"},
-        {id:3,title:"Revamping the Membership Model with Triathlon Australia",image:"/src/assets/B3.jpg"},
+        {id:1,title:"Creating Streamlined Safeguarding Processes with OneRen",image:"./src/assets/B1.jpg"},
+        {id:2,title:"What are your safeguarding responsibilities and how can you manage them?",image:"./src/assets/B2.jpg"},
+        {id:3,title:"Revamping the Membership Model with Triathlon Australia",image:"./src/assets/B3.jpg"},
     ]
   return (
     

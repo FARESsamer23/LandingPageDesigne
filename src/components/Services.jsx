@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 export default function Services() {
 
   const services = [
-    {id:1,title:'Membership Organisations',description:'Our membership management software provides full automation of membership renewals and payments',image:"/src/assets/vector3.png"},
-    {id:2,title:'National Associations',description:'Our membership management software provides full automation of membership renewals and payments',image:"/src/assets/vector2.png"},
-    {id:3,title:'Clubs And Groups',description:'Our membership management software provides full automation of membership renewals and payments',image:"/src/assets/vector1.png"}
+    {id:1,title:'Membership Organisations',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector3.png"},
+    {id:2,title:'National Associations',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector2.png"},
+    {id:3,title:'Clubs And Groups',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector1.png"}
   ];
 
   const containerRef = useRef(null);
@@ -75,13 +75,13 @@ export default function Services() {
         <h2 className='text-4xl text-neutralDgrey font-semibold mb-2'>Our Clients</h2>
         <p className='text-neutralgrey'>We have been working with some Fortune 500+ clients</p>
         <div className='flex flex-wrap items-center justify-around my-12 gap-8 '>
-          <img src="/src/assets/Logo1.png" alt="img"/>
-          <img src="/src/assets/Logo2.png" alt="img"/>
-          <img src="/src/assets/Logo3.png" alt="img"/>
-          <img src="/src/assets/Logo4.png" alt="img"/>
-          <img src="/src/assets/Logo5.png" alt="img"/>
-          <img src="/src/assets/Logo6.png" alt="img"/>
-          <img src="/src/assets/Logo7.png" alt="img"/>
+          <img src="./src/assets/Logo1.png" alt="img"/>
+          <img src="./src/assets/Logo2.png" alt="img"/>
+          <img src="./src/assets/Logo3.png" alt="img"/>
+          <img src="./src/assets/Logo4.png" alt="img"/>
+          <img src="./src/assets/Logo5.png" alt="img"/>
+          <img src="./src/assets/Logo6.png" alt="img"/>
+          <img src="./src/assets/Logo7.png" alt="img"/>
         </div>
       </div>
 

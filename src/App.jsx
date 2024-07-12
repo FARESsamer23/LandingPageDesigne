@@ -1,24 +1,29 @@
-import "./App.css"
-import About from "./components/About"
-import Blog from "./components/Blog"
-import Home from "./components/Home"
-import Navbar from "./components/Navbar"
-import NewsLetter from "./components/NewsLetter"
-import Products from "./components/Products"
-import Services from "./components/Services"
-import Myfooter from "./components/Myfooter"
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Services from './components/Services';
+import About from './components/About';
+import Products from './components/Products';
+import Blog from './components/Blog';
+import NewsLetter from './components/NewsLetter';
+import Myfooter from './components/Myfooter';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-    <Navbar/>
-   <Home/>
-   <Services/>
-   <About/>
-   <Products/>
-   <Blog/>
-   <NewsLetter/>
-   <Myfooter/>
-    </div>
-  )
+    <Router basename="/LandingPageDesigne">
+      <div className="App">
+        <Navbar />
+        <Home />
+        <Services />
+        <About />
+        <Products />
+        <Blog />
+        <NewsLetter />
+        <Myfooter />
+      </div>
+    </Router>
+  );
 }
+
+export default App;

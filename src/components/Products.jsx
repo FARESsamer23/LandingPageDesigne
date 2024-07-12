@@ -91,7 +91,7 @@ export default function Products() {
       <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8'>
         <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-4'>
           <div className={`w-full md:w-1/2 img-container ${isImgInView ? 'animate-img' : ''}`} ref={imgRef}>
-            <img src='/src/assets/Hand coding-rafiki.png' alt='' />
+            <img src='./src/assets/Hand coding-rafiki.png' alt='' />
           </div>
           <div className={`md:w-3/5 mx-auto text-container ${isTextInView ? 'animate-text' : ''}`} ref={textRef}>
             <h2 className='text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5 hover:text-neutral-500'>How to design your site footer like we did</h2>
@@ -107,7 +107,7 @@ export default function Products() {
       <div className={`px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16 stats-container ${isStatsInView ? 'animate-stats' : ''}`} ref={statsRef}>
         <div className='flex flex-col md:flex-row flex-wrap items-center justify-around'>
           <div className='md:w-1/3 w-full'>
-            <img src='/src/assets/image9.png' className='w-full' alt='' />
+            <img src='./src/assets/image9.png' className='w-full' alt='' />
           </div>
           {/* Stats */}
           <div className='md:w-2/3 mx-auto'>
@@ -122,13 +122,13 @@ export default function Products() {
               <h3 className='text-xl font-semibold text-brandPrimary'>Tim Smith</h3>
               <p className='w-full text-sm text-neutral-400 my-5'>British Dragon Boat Racing Association</p>
               <div className='flex flex-wrap items-center justify-around my-12 gap-8'>
-                <img src="/src/assets/Logo1.png" alt="img"/>
-                <img src="/src/assets/Logo2.png" alt="img"/>
-                <img src="/src/assets/Logo3.png" alt="img"/>
-                <img src="/src/assets/Logo4.png" alt="img"/>
-                <img src="/src/assets/Logo5.png" alt="img"/>
-                <img src="/src/assets/Logo6.png" alt="img"/>
-                <img src="/src/assets/Logo7.png" alt="img"/>
+                <img src="./src/assets/Logo1.png" alt="img"/>
+                <img src="./src/assets/Logo2.png" alt="img"/>
+                <img src="./src/assets/Logo3.png" alt="img"/>
+                <img src="./src/assets/Logo4.png" alt="img"/>
+                <img src="./src/assets/Logo5.png" alt="img"/>
+                <img src="./src/assets/Logo6.png" alt="img"/>
+                <img src="./src/assets/Logo7.png" alt="img"/>
                 <a href='/' className='text-brandPrimary font-semibold text-lg'>Meet all customers --{'>'}</a>
               </div>
             </div>

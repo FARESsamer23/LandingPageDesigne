@@ -11,7 +11,7 @@ export default function Myfooter() {
           <div className='space-y-4'>
             <Footer.Brand
               href="https://flowbite.com"
-              src="/src/assets/Icon.png"
+              src="./src/assets/Icon.png"
               alt="Flowbite Logo"
               name="NEXCENT"
             />
