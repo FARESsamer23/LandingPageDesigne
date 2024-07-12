@@ -8,7 +8,7 @@ export default function NewsLetter() {
           <h2 className='text-3xl text-neutralDgrey font-semibold mb-6   hover:text-neutral-500 lg:leading-snug lg:text-5xl'>Pellentesque Suscipt Freingila Libro eu.</h2>
           </div>
           <div className=' text-center'>
-          <button className='btn-primary '>Get a Demo --></button>
+          <button className='btn-primary '> Get a Demo {'-->'} </button>
           </div>
        </div>
     </div>

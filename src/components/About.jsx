@@ -1,15 +1,72 @@
 import React from 'react'
-
+import  { useEffect, useRef, useState } from 'react';
 export default function About() {
+
+  const containerRef = useRef(null);
+  const imgRef = useRef();
+  const [isContainerInView, setIsContainerInView] = useState(false);
+  const [imgInView, setImgInView] = useState();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsContainerInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setImgInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    if (imgRef.current) {
+      observer.observe(imgRef.current);
+    }
+
+    return () => {
+      if (imgRef.current) {
+        observer.unobserve(imgRef.current);
+      }
+    };
+  }, []);
+
+  
+
+
   return (
     <div id='about'>
       {/*about text*/}
          <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
            <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-4 '>
-                <div className='w-full md:w-1/2'>
+                <div 
+                ref={imgRef}
+                className={` w-full md:w-1/2 card ${imgInView  ? 'animate-card' : ''} `}>
                      <img src='/src/assets/AboutAs.png' alt=''/>
                 </div>
-                <div className='md:w-3/5 mx-auto'>
+
+                <div 
+                ref={containerRef} 
+                className={` md:w-3/5 mx-auto my-animated-component ${isContainerInView ? 'animate-container' : ''}`}
+                >
                 <h2 className='text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5  hover:text-neutral-500'>The unseen of spending three years at Pixelgrade</h2>
                 <p className='md:w-3/4 text-sm text-neutralgrey mb-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
                  Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. 

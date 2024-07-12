@@ -15,3 +15,52 @@ header{
     @apply px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDgrey
     transition-all duration-300 hover:-translate-y-4
 }
+
+.my-animated-component {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .my-animated-component.animate-container {
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+  
+  .card {
+    opacity: 0;
+    transform: translateX(-100px) ;
+    transition: opacity 1s ease, transform 1s ease !important;
+  }
+  
+  .card.animate-card {
+    opacity: 1;
+   
+    transform: translateX(0) ;
+  }
+
+
+
+  .cont {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .cont.animate-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .img-container, .text-container, .stats-container {
+    opacity: 0;
+    transform: translateX(-50px) rotateY(20deg);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .img-container.animate-img, .text-container.animate-text, .stats-container.animate-stats {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+  
