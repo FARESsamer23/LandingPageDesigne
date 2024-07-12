@@ -1,12 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-
+import B1 from './assets/B1.jpg';
+import B2 from './assets/B2.jpg';
+import B3 from './assets/B3.jpg';
 export default function Blog() {
-    const blogs = [
-        {id:1,title:"Creating Streamlined Safeguarding Processes with OneRen",image:"./src/assets/B1.jpg"},
-        {id:2,title:"What are your safeguarding responsibilities and how can you manage them?",image:"./src/assets/B2.jpg"},
-        {id:3,title:"Revamping the Membership Model with Triathlon Australia",image:"./src/assets/B3.jpg"},
-    ]
+  const blogs = [
+  {id: 1, title: 'Creating Streamlined Safeguarding Processes with OneRen', image: B1},
+  {id: 2, title: 'What are your safeguarding responsibilities and how can you manage them?', image: B2},
+  {id: 3, title: 'Revamping the Membership Model with Triathlon Australia', image: B3}
+];
   return (
     
     <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-12' id='testimonial' >
