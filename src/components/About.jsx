@@ -7,7 +7,7 @@ export default function About() {
          <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
            <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-4 '>
                 <div className='w-full md:w-1/2'>
-                     <img src='./src/assets/AboutAs.png' alt=''/>
+                     <img src='/src/assets/AboutAs.png' alt=''/>
                 </div>
                 <div className='md:w-3/5 mx-auto'>
                 <h2 className='text-4xl text-neutralDgrey font-semibold mb-4 md:w-4/5  hover:text-neutral-500'>The unseen of spending three years at Pixelgrade</h2>
