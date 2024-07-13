@@ -1,11 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
+ import  s3 from '../assets/vector3.png'
+ import  s2 from '../assets/vector2.png'
+ import  s1 from '../assets/vector1.png'
+   import logo1 from "../assets/Logo1.png"
+      import logo2 from "../assets/Logo2.png"
+         import logo3 from "../assets/Logo3.png"
+            import logo4 from "../assets/Logo4.png"
+               import logo5 from "../assets/Logo5.png"
+                  import logo6 from "../assets/Logo6.png"
+                     import logo7 from "../assets/Logo7.png"
 
 export default function Services() {
 
   const services = [
-    {id:1,title:'Membership Organisations',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector3.png"},
-    {id:2,title:'National Associations',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector2.png"},
-    {id:3,title:'Clubs And Groups',description:'Our membership management software provides full automation of membership renewals and payments',image:"./src/assets/vector1.png"}
+    {id:1,title:'Membership Organisations',description:'Our membership management software provides full automation of membership renewals and payments',image:s3},
+    {id:2,title:'National Associations',description:'Our membership management software provides full automation of membership renewals and payments',image:s2},
+    {id:3,title:'Clubs And Groups',description:'Our membership management software provides full automation of membership renewals and payments',image:s1}
   ];
 
   const containerRef = useRef(null);
@@ -75,13 +85,14 @@ export default function Services() {
         <h2 className='text-4xl text-neutralDgrey font-semibold mb-2'>Our Clients</h2>
         <p className='text-neutralgrey'>We have been working with some Fortune 500+ clients</p>
         <div className='flex flex-wrap items-center justify-around my-12 gap-8 '>
-          <img src="./src/assets/Logo1.png" alt="img"/>
-          <img src="./src/assets/Logo2.png" alt="img"/>
-          <img src="./src/assets/Logo3.png" alt="img"/>
-          <img src="./src/assets/Logo4.png" alt="img"/>
-          <img src="./src/assets/Logo5.png" alt="img"/>
-          <img src="./src/assets/Logo6.png" alt="img"/>
-          <img src="./src/assets/Logo7.png" alt="img"/>
+          <img src={logo1} alt="img"/>
+          <img src={logo2} alt="img"/>
+          <img src={logo3} alt="img"/>
+          <img src={logo4} alt="img"/>
+          <img src={logo5} alt="img"/>
+          <img src={logo6} alt="img"/>
+          <img src={logo7} alt="img"/>
+         
         </div>
       </div>
 
