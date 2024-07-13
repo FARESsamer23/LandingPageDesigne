@@ -3,12 +3,14 @@ import blog1 from '../assets/B1.jpg'
 import blog2 from '../assets/B2.jpg'
 import blog3 from '../assets/B3.jpg'
 
+
 export default function Blog() {
   const blogs = [
     {id:1,title:"Creating Streamlined Safeguarding Processes with OneRen",image:blog1},
     {id:2,title:"What are your safeguarding responsibilities and how can you manage them?",image:blog2},
     {id:3,title:"Revamping the Membership Model with Triathlon Australia",image:blog3},
   ]
+ 
   return (
     <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-12' id='testimonial' >
       <div className='text-center md:w-1/2 mx-auto'>
